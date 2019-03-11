@@ -2,7 +2,11 @@ class QuizApp
   
   def get_answer
     puts "What is the capital of France?"
-    gets.chomp
+    ans = gets.chomp
+    if ans = "Paris"
+      puts "Right"
+      return "Right"
+    end
   end
 
 end
